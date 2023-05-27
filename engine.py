@@ -43,11 +43,6 @@ def train_one_epoch(model: torch.nn.Module, criterion: DistillationLoss,
 
         with torch.cuda.amp.autocast():
             outputs = model(samples)
-            # print(outputs.shape)
-            # print(targets.shape)
-            # outputs = outputs.reshape(targets.shape[0], 6, 40)  # B, N, C (class number)
-            # outputs = outputs.mean(1)  # B,C  average pooling on multi-view
-            # outputs = outputs.max(1)  # max pooling on multi-view
             loss = criterion(samples, outputs, targets)
 
         loss_value = loss.item()

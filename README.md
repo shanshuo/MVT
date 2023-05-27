@@ -16,6 +16,7 @@ If you use this code for a paper, please cite:
 }
 ```
 
+We have developed a MLP-based architecture for view-based 3D object recognition. Check out our paper [R2-MLP: Round-Roll MLP for Multi-View 3D Object Recognition](https://arxiv.org/abs/2211.11085) and the accompanying [code repository](https://github.com/shanshuo/R2-MLP) for more information.
 
 ## Requirements
 - PyTorch 1.7.0+
